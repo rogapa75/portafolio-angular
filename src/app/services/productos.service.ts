@@ -24,7 +24,7 @@ export class ProductosService {
     return new Promise ((resolve, reject) => {
  this.http.get('https://curso-angula-html.firebaseio.com/productos_idx.json')
     .subscribe((resp: Producto[]) => {
-        console.log(resp);
+        //console.log(resp);
         this.productos = resp;
         this.cargando = false;
         resolve();
