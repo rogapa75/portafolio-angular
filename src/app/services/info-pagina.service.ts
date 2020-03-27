@@ -24,7 +24,7 @@ export class InfoPaginaService {
       .subscribe( (resp: infoPagina) => {
           this.cargada = true;
           this.info = resp;
-          console.log(resp);
+          // console.log(resp);
           // console.log( resp['twitter'] );
 
       }); 
@@ -34,7 +34,7 @@ export class InfoPaginaService {
     this.http.get('https://curso-angula-html.firebaseio.com/equipo.json')
     .subscribe( (resp: any) => {
         this.equipo = resp;
-        console.log(resp);
+        // console.log(resp);
     })
 
   }
